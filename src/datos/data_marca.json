@@ -1,0 +1,17 @@
+[
+    {
+        "documento": 1,
+        "tipo": "oficio",
+        "descripcion": "<p>De mi mayor consideración:</p><p>Es grato dirigirme a usted, xxxx.</p><p>En sentido se remite lo informado por el área competente para su conocimiento y fines pertinentes.</p><p>Atentamente,</p><p>C.c. Archivo:</p>"
+    },
+    {
+        "documento": 2,
+        "tipo": "informe",
+        "descripcion": "<p>Me dirijo a usted para saludarle cordialmente...</p><p>Atentamente,</p>"
+    },
+    {
+        "documento": 3,
+        "tipo": "oficio",
+        "descripcion": "<p>Mediante el presente expreso a Usted mi saludo cordial, XXX</p><p>Sin otro particular, hago propicia la oportunidad de renovarle los sentimientos de mi consideración.</p><p>Atentamente</p><p>C.c. Archivo: </p>"
+    }
+]
