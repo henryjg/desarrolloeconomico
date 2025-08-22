@@ -124,10 +124,10 @@ import { HOST_URL } from '../../../config';
 import { FormatFecha } from '../../../utils/FormatFecha';
 import { list_meses } from '../../../utils/listas.fijas';
 import { DocumentoFull } from '../../../interfaces/documento.interface';
-import { get_listadocumentos_mesapartes_enviados, get_lista_documento_Interno_buscar } from '../../../services/DocumentoServices';
+// import { get_listadocumentos_mesapartes_enviados, get_lista_documento_Interno_buscar } from '../../../services/DocumentoServices';
 import Notif from '../../../utils/notificaciones';
 import { usarAuthStore } from '../../../stores/autentificacionStore';
-import { initializeFiltro,filtros } from '../../../interfaces/filtros.interface';
+// import { initializeFiltro,filtros } from '../../../interfaces/filtros.interface';
 import { Modal } from 'bootstrap';
 
 export default defineComponent({

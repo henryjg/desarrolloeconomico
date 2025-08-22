@@ -2,10 +2,10 @@
   <div class="row ">
     <div class="col-12">
       <div class="d-flex m-l-15">
-          <router-link :to="{ name: 'Editarlicencia', params: { id: idlicencia } }"
+          <!-- <router-link :to="{ name: 'Editarlicencia', params: { id: idlicencia } }"
                 class="btn btn-warning rounded-top-3 rounded-bottom-0 me-2 pt-2">
             <i class="ti ti-database  p-r-5"></i> DATOS
-          </router-link>
+          </router-link> -->
 
           <router-link :to="{ name: 'Generarlicencia', params: { id: idlicencia } }"
                 class="btn btn-secondary  rounded-top-3 rounded-bottom-0  me-2  pt-2">
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="row mt-0">
+  <!-- <div class="row mt-0">
       <div class="col-md-10">
           <div class="card border-0">
             <div class="card-header bg-yellow-800 mt-0 pb-1 pb-0">
@@ -22,13 +22,13 @@
                 <i class="fa fa-edit p-r-10"></i> Editar Registro
               </h5>
             </div>              
-            <div class="card-body  px-4">
+            <div class="card-body  px-4"> -->
                 <!-- ********************************************* -->
-                <h5 class="pt-2 text-secondary">1. Datos del Expediente</h5>
+                <!-- <h5 class="pt-2 text-secondary">1. Datos del Expediente</h5> -->
                 <!-- ---------------------------- -->
-                <hr class="mb-4 my-1 b-warning">
+                <!-- <hr class="mb-4 my-1 b-warning"> -->
                 <!-- ---------------------------- -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-6">
                     <div class="mb-2 ">
                       <label class="form-label  align-content-top pt-2">Código de Expediente</label>
@@ -70,15 +70,15 @@
                       <ErrorMessage :error="errors.pago_codoperacion" />
                     </div>
                   </div>
-                </div>
+                </div> -->
            
 
                 <!-- ********************************************* -->
-                <h5 class="pt-5 text-secondary">2. Datos del Negocio</h5>
+                <!-- <h5 class="pt-5 text-secondary">2. Datos del Negocio</h5> -->
                 <!-- ---------------------------- -->
-                <hr class="mb-4 my-1 b-warning">
+                <!-- <hr class="mb-4 my-1 b-warning"> -->
                 <!-- ---------------------------- -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-6">
                     <div class="mb-2">
                       <label class="form-label align-content-top pt-2">Tipo Persona Jurídica</label>
@@ -96,9 +96,9 @@
                       <ErrorMessage :error="errors.negocio_ruc" />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- ---------------------------- -->
-                <div class="row " >
+                <!-- <div class="row " >
                   <div class="col-md-12">
                     <div class="mb-2 ">
                       <label class="form-label  align-content-top pt-2 ">Razón Social</label>
@@ -144,9 +144,9 @@
                       <ErrorMessage :error="errors.negocio_direccionfiscal" />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- ---------------------------- -->
-
+<!-- 
                 <div class="row">
                   
                   <div class="col-md-4 ">
@@ -165,11 +165,11 @@
                       <ErrorMessage :error="errors.representantelegal_nombre" />
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- -------------------------------------------- -->
 
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-12 mb-2">
                     <div class="mb-1 ">
                       <label class="form-label  align-content-top pt-2">Nombre comercial:</label>
@@ -194,16 +194,16 @@
                     </div>
                     <ErrorMessage :error="errors.negocio_actividadcomercial" />
                   </div>
-                </div>
+                </div> -->
 
                 <!-- -------------------------------------------- -->
-                <h5 class="pt-5 text-secondary">3. Ubicación del Negocio</h5>
+                <!-- <h5 class="pt-5 text-secondary">3. Ubicación del Negocio</h5> -->
                 <!-- ---------------------------- -->
-                <hr class="mb-4 my-1 b-warning">
+                <!-- <hr class="mb-4 my-1 b-warning"> -->
                 <!-- ---------------------------- -->
 
 
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-12 mb-2">
                     <div class="mb-1 ">
                       <label class="form-label  align-content-top pt-2">Dirección del Establecimiento</label>
@@ -254,10 +254,10 @@
                   </div>
                 </div>
 
-                
+                 -->
 
                 <!-- ---------------------------- -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-12 mb-2">
                     <div class="mb-1 ">
                       <label class="form-label  align-content-top pt-2">REFERENCIA</label>
@@ -289,16 +289,16 @@
                       <ErrorMessage :error="errors.negocio_condicionlocal" />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- ---------------------------- -->
                 <!-- ---------------------------- -->
-                <h5 class="pt-5 text-secondary">4. ITSE y Observación:</h5>
+                <!-- <h5 class="pt-5 text-secondary">4. ITSE y Observación:</h5> -->
                 <!-- ---------------------------- -->
-                <hr class="mb-4 my-1 b-warning">
+                <!-- <hr class="mb-4 my-1 b-warning"> -->
                 <!-- ---------------------------- -->
                 
                 <!-- ---------------------------- -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-4">
                     <div class="mb-2">
                       <label for="tipoinspeccion" class="form-label pt-2">Tipo de Inspección</label>
@@ -308,9 +308,9 @@
                       </select>
                       <ErrorMessage :error="errors.itse_tipoinspeccion" />
                     </div>
-                  </div>
+                  </div> -->
                   <!-- ---------------------------- -->
-                  <div class="col-md-4">
+                  <!-- <div class="col-md-4">
                     <div class="mb-2" v-if="licencia.itse_tipoinspeccion=='ITSE PREVIA'">
                       <label for="resultadoITSE" class="form-label pt-2">Resultado ITSE</label>
                       <select class="form-control multi-line-select" v-model="licencia.itse_resultado" id="riesgo">
@@ -319,9 +319,9 @@
                       </select>
                       <ErrorMessage :error="errors.itse_resultado" />
                     </div>
-                  </div>
+                  </div> -->
                   <!-- ---------------------------- -->
-                  <div class="col-md-4">
+                  <!-- <div class="col-md-4">
                     <div class="mb-2" v-if="licencia.itse_tipoinspeccion=='ITSE PREVIA'">
                       <label for="riesgo" class="form-label pt-2">Riesgo</label>
                       <select class="form-control multi-line-select" v-model="licencia.itse_riesgo" id="riesgo">
@@ -332,10 +332,10 @@
                     </div>
                   </div>
                   
-                </div>
+                </div> -->
 
                 <!-- ---------------------------- -->
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-12 ">
                     <div class="mb-2 ">
                       <label class="form-label  align-content-top pt-2">Observación:</label>
@@ -343,41 +343,41 @@
                       <ErrorMessage :error="errors.itse_observacion" />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- ---------------------------- -->
 
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
           <!-- ------------------------------ -->
-      </div>
+      <!-- </div> -->
   
-      <div class="col-md-2">
+      <!-- <div class="col-md-2"> -->
           <!-- -------------- -->
-          <div class="sticky-top mt-0 pt-0 text-center" style="top:74px">  
-              <div class="alert alert-primary f-w-700 uppercase">{{ licencia.categoriatramite_tupa }}</div>
+          <!-- <div class="sticky-top mt-0 pt-0 text-center" style="top:74px">  
+              <div class="alert alert-primary f-w-700 uppercase">{{ licencia.categoriatramite_tupa }}</div> -->
               <!-- ------------------------------ -->
-              <button @click="guardarLicencia" class="btn btn-lg  btn-primary mt-1 m-auto w-100">
-                        <i class="fas fa-save p-r-5"></i>Guardar </button>
+              <!-- <button @click="guardarLicencia" class="btn btn-lg  btn-primary mt-1 m-auto w-100">
+                        <i class="fas fa-save p-r-5"></i>Guardar </button> -->
 
               <!-- -------------------------------- -->
-              <button  class="btn btn-danger text-center  btn-lg mt-2 w-100"
+              <!-- <button  class="btn btn-danger text-center  btn-lg mt-2 w-100"
                       @click="openModal">
-                      <i class="fas fa-times p-r-5"></i>Rechazar</button>
+                      <i class="fas fa-times p-r-5"></i>Rechazar</button> -->
               <!-- -------------------------------- -->
                         
-              <router-link :to="{ name: 'Lista_Licencias_enproceso'}">
+              <!-- <router-link :to="{ name: 'Lista_Licencias_enproceso'}">
                 <button  class="btn btn-lg  btn-secondary mt-3 m-auto w-100">
                   <i class="fas fa-times p-r-5"></i>Cancelar</button>
-              </router-link>
+              </router-link> -->
               <!-- ------------------------------ -->
-          </div>  
+          <!-- </div>  
                
       </div>
-  </div>  
+  </div>   -->
   
   
   <!-- Modal para agregar Requisito -->
-  <div class="modal fade" id="modalRechazar" tabindex="-1" aria-labelledby="modalRechazarLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="modalRechazar" tabindex="-1" aria-labelledby="modalRechazarLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 
@@ -400,7 +400,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script lang="ts">
@@ -566,27 +566,27 @@ export default defineComponent({
       licencia.value.fecharegistro = licencia.value.fecharegistro.split(' ')[0];
     });
 
-    const Rechazar_solicitud = async () => {
-      const isConfirmado = await Alerta.ConfirmacionRegistro(
-            'Confirmación',
-            '¿Desea rechazar esta solicitud?'
-        );
-        if (isConfirmado) {
-          NProgress.start();
-          try {
-              const response = await rechazar_solicitud_licencia(idlicencia.toString(),frm_motivo.value);
-              if(response.success){
-                closeModal();
-                Notif.Success("El expediente fue rechazado.");
-                router.push('/office/licencia_solicitudes');
-              }
-          } catch (error) {
-              Alerta.Error('Error', 'No se pudo cargar la licencia.');
-          } finally {
-              NProgress.done();
-          }
-        }
-     };
+    // const Rechazar_solicitud = async () => {
+    //   const isConfirmado = await Alerta.ConfirmacionRegistro(
+    //         'Confirmación',
+    //         '¿Desea rechazar esta solicitud?'
+    //     );
+    //     if (isConfirmado) {
+    //       NProgress.start();
+    //       try {
+    //           const response = await rechazar_solicitud_licencia(idlicencia.toString(),frm_motivo.value);
+    //           if(response.success){
+    //             closeModal();
+    //             Notif.Success("El expediente fue rechazado.");
+    //             router.push('/office/licencia_solicitudes');
+    //           }
+    //       } catch (error) {
+    //           Alerta.Error('Error', 'No se pudo cargar la licencia.');
+    //       } finally {
+    //           NProgress.done();
+    //       }
+    //     }
+    //  };
      const openModal = () => {
       const modalElement = document.getElementById('modalRechazar');
       if (modalElement) {
@@ -629,7 +629,7 @@ export default defineComponent({
       idlicencia,
       tipopersona,
 
-      Rechazar_solicitud,
+      // Rechazar_solicitud,
       frm_motivo,
         openModal,closeModal
 

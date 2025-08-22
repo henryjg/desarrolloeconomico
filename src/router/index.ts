@@ -154,6 +154,30 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../views/administrador/licencia_vencidas.vue'),
         meta: { requiresAuth: true },
       },
+      {
+        path: 'modulo_busqueda',
+        name: 'ModuloBusqueda',
+        component: () => import('../views/administrador/DocumentosAntiguos/historial_seguimiento.vue'),
+        meta: { requiresAuth: true },
+        children: [
+            // {
+            //   path: 'buscar_administrado',
+            //   name: 'BuscarAdministrado',
+            //   component: () => import('../views/administrador/DocumentosAntiguos/historial_seguimiento_buscar_administrado.vue'),
+            // },
+            // {
+            //   path: 'buscar_documento',
+            //   name: 'BuscarDocumento',
+            //   component: () => import('../views/administrador/DocumentosAntiguos/historial_seguimiento_buscar_documento.vue'),
+            // },
+            {
+              path: 'buscar_licencia',
+              name: 'BuscarLicencia',
+              component: () => import('../views/administrador/DocumentosAntiguos/historial_seguimiento_buscar_historial.vue'),
+            },
+        ]
+       
+      },
    
       // {
       //   path: 'listadocumento',

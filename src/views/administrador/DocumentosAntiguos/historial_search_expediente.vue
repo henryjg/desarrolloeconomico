@@ -114,7 +114,7 @@ import { FormatFecha } from '../../../utils/FormatFecha';
 import { list_meses } from '../../../utils/listas.fijas';
 import { DocumentoFull } from '../../../interfaces/documento.interface';
 
-import { del_documento, derivar_documento_mesapartes, get_listadocumentos_mesapartes_iniciado } from '../../../services/DocumentoServices';
+// import { del_documento, derivar_documento_mesapartes, get_listadocumentos_mesapartes_iniciado } from '../../../services/DocumentoServices';
 import Notif from '../../../utils/notificaciones';
 import Alerta from '../../../utils/alertas';
 import { usarAuthStore } from '../../../stores/autentificacionStore';

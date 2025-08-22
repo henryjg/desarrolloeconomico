@@ -9,11 +9,11 @@
       <div class="card-body py-0 px-2">
         <ul class="nav nav-tabs profile-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <router-link :to="{ name: 'BuscarHistorial' }" class="nav-link" active-class="active" role="tab">
+            <router-link :to="{ name: 'BuscarLicencia' }" class="nav-link" active-class="active" role="tab">
               <i class="ti ti-shield-check me-2"></i>Buscar Documentos Internos
             </router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link :to="{ name: 'BuscarDocumento' }" class="nav-link" active-class="active" role="tab">
               <i class="ti ti-file-text me-2"></i>Buscar por Nro Documento
             </router-link>
@@ -22,7 +22,7 @@
             <router-link :to="{ name: 'BuscarAdministrado' }" class="nav-link" active-class="active" role="tab">
               <i class="ti ti-user me-2"></i>Buscar por Administrado
             </router-link>
-          </li>
+          </li> -->
         </ul>
       </div>
       <!-- ---------------------------------------------------------- -->

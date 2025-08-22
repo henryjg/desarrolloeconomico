@@ -76,10 +76,24 @@ export class FormatFecha {
         return `${dia} de ${mes} de ${anio}`;
     }
     
+    static convertirFecha_saltolinea(fechaStr: string): string {
+        const fecha = new Date(fechaStr);
     
+        const dia = fecha.getDate();
+        const mes = fecha.getMonth() + 1;
+        const año = fecha.getFullYear();
+        const horas = fecha.getHours();
+        const minutos = fecha.getMinutes();
+    
+        const diaStr = dia < 10 ? `0${dia}` : `${dia}`;
+        const mesStr = mes < 10 ? `0${mes}` : `${mes}`;
+        const horasStr = horas < 10 ? `0${horas}` : `${horas}`;
+        const minutosStr = minutos < 10 ? `0${minutos}` : `${minutos}`;
+    
+        return `${diaStr}/${mesStr}/${año} ${horasStr}:${minutosStr}`;
+    };
 
 
-    
 
     static convertirFecha(fechaStr: string): string {
         if (!fechaStr) return '';

@@ -217,5 +217,11 @@ export const menuItems: MenuItem[] = [
     role_ids: [1,3,2, 4]  
   },
   
-  
+    {
+    tipe: 'link',
+    text: 'Busqueda ',
+    icon: 'fas fa-search',
+    route: '/office/modulo_busqueda/buscar_licencia',
+    role_ids: [1,4]  
+  },
 ];

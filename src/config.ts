@@ -20,10 +20,10 @@
 // export const HOST_URL: string = dominio+'/licencias/backapi_prueba/';
 
 // REAL  https://digital.muniveintiseisdeoctubre.gob.pe/licencias/backapi/apiweb.php
-const dominio: string = 'https://digital.muniveintiseisdeoctubre.gob.pe';
-export const BASE_URL = dominio;
-export const API_URL:  string = dominio+'/licencias/backapi/apiweb.php';
-export const HOST_URL: string = dominio+'/licencias/backapi/';
+// const dominio: string = 'https://digital.muniveintiseisdeoctubre.gob.pe';
+// export const BASE_URL = dominio;
+// export const API_URL:  string = dominio+'/licencias/backapi/apiweb.php';
+// export const HOST_URL: string = dominio+'/licencias/backapi/';
 
 // config.ts  http://192.168.0.24:8080/api_licencias/apiweb.php
 
@@ -35,10 +35,10 @@ export const HOST_URL: string = dominio+'/licencias/backapi/';
 // export const HOST_URL: string = dominio+'/licencias/webapi/';
 
 
-// const dominio: string = 'http://localhost:8080/';
-// export const BASE_URL = dominio;
-// export const API_URL: string = dominio+'api_licencias/apiweb.php';
-// export const HOST_URL: string = dominio+'/api_licencias/';
+const dominio: string = 'http://localhost:8080/';
+export const BASE_URL = dominio;
+export const API_URL: string = dominio+'desarrolloeconomico_backend/apiweb.php';
+export const HOST_URL: string = dominio+'/desarrolloeconomico_backend/';
 
 
 

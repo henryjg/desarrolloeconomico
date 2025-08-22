@@ -106,17 +106,29 @@ export default defineComponent({
   setup() {
 
     const listaLicencias = ref<Licencia_tabla[]>([]);
-    const filtros = ref<filtros_licencia>(initializeLicenciaFiltro());
     const currentYear = new Date().getFullYear(); // Año actual
+    // Inicializa el filtro de año y mes con los valores actuales
+    const currentMonth = new Date().getMonth() + 1; // Mes actual (1-12)
+    const filtros = ref<filtros_licencia>({
+      ...initializeLicenciaFiltro(),
+      f_anio_registro: currentYear,
+      f_mes_registro: currentMonth
+    });
 
     const cargarLicencias = async () => {
       NProgress.start();
-      filtros.value.f_estado = "EMITIDO"; // Aseguramos que el filtro de estado esté establecido
-      filtros.value.f_categoria="Licencia de Funcionamiento";
+      filtros.value.f_estado = "EMITIDO";
+      filtros.value.f_categoria = "Licencia de Funcionamiento";
+      // Si el año o mes no están definidos, los pone en el actual
+      if (!filtros.value.f_anio_registro) {
+        filtros.value.f_anio_registro = currentYear;
+      }
+      if (!filtros.value.f_mes_registro) {
+        filtros.value.f_mes_registro = currentMonth;
+      }
       try {
         const respuesta = await get_tabla_licencias_emtidas(filtros.value);
         listaLicencias.value = respuesta.data;
-        console.log(listaLicencias.value);
       } catch (error) {
         console.error('Error al cargar las licencias:', error);
       } finally {
@@ -151,14 +163,13 @@ export default defineComponent({
         return value ? value.toString() : 'N/A';
     };
 
-    const resetear= () =>{
-      filtros.value =({
-        f_mes_registro: null,
-        f_anio_registro: null,
-        f_fecha_inicio: null,  
-        f_fecha_fin: null, 
-        f_categoria: null
-      });
+    const resetear = () => {
+      filtros.value = {
+        ...initializeLicenciaFiltro(),
+        f_anio_registro: currentYear,
+        f_mes_registro: currentMonth,
+        f_categoria: "Licencia de Funcionamiento"
+      };
       cargarLicencias();
     };
 

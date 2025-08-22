@@ -747,7 +747,7 @@ export default {
           StoreList.HorarioLicencia="";
           formLicencia.value = initializeFormInsertLicencia();
           errors.value = initializeFormInsertLicencia();
-          router.push('/office/licencia_solicitudes');
+          router.push('/office/licencias_enproceso');
         } else {
           Alerta.Error('Error', respuesta.message);
         }

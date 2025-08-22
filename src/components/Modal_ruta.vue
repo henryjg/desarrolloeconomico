@@ -236,7 +236,7 @@ import Notif from "../utils/notificaciones";
 import Alerta from "../utils/alertas";
 import ErrorMessage from '../components/ErrorMessage.vue';
 import { DocumentoExterno, DocumentoFull, DocumentoPase, initialize_CrearDocumentoExterno, initialize_DocumentoFull, initialize_DocumentoPase } from "../interfaces/documento.interface";
-import { get_documentoCompleto_primerpase, Listar_doc_relacionados, Listar_ruta_pases } from "../services/DocumentoServices";
+// import { get_documentoCompleto_primerpase, Listar_doc_relacionados, Listar_ruta_pases } from "../services/DocumentoServices";
 import { Administrado, initializeAdministrado } from "../interfaces/administrado.interface";
 import { get_administrado_id } from "../services/AdministradoService";
 import NProgress from 'nprogress';

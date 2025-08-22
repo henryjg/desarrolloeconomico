@@ -2,15 +2,15 @@
   <div class="row ">
     <div class="col-12">
       <div class="d-flex m-l-15">
-          <router-link :to="{ name: 'Editarlicencia', params: { id: idlicencia } }"
+          <!-- <router-link :to="{ name: 'Editarlicencia', params: { id: idlicencia } }"
                 class="btn btn-secondary rounded-top-3 rounded-bottom-0 me-2 pt-2">
             <i class="ti ti-database  p-r-5"></i> DATOS
-          </router-link>
-
+          </router-link> -->
+<!-- 
           <router-link :to="{ name: 'Generarlicencia', params: { id: idlicencia } }"
                 class="btn btn-warning bg-yellow-600  rounded-top-3 rounded-bottom-0  me-2  pt-2">
             <i class="ti ti-certificate p-r-5"></i> GENERAR DOCUMENTOS
-          </router-link>
+          </router-link> -->
       </div>
     </div>
   </div>
